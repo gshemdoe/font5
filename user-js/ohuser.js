@@ -6,7 +6,7 @@ var saa = tarehe.getHours()
 var dakika = tarehe.getMinutes()
 var sekunde = tarehe.getSeconds()
 
-const domain = `http://localhost:3000`
+const domain = `https://netdramastore.herokuapp.com`
 
 
 document.getElementById('yaLeo').innerHTML = leo + "/" + mwezi + "/" + mwaka

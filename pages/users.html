@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Point's Bot | Userstatus</title>
+    <link rel="stylesheet" href="../users.css">
+    <script src="../user-js/user.js" defer></script>
+    <script src="../user-js/table.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">FONT5</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/privacy.html">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/terms.html">Terms of
+                                Use</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../pages/disclaimer.html">Disclaimer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mainbox">
+        <div class="userbox" id="userbox">
+            <div class="wrapper">
+                <h2 class="title">DRAMASTORE BOT | USER STATUS</h2>
+                <hr><br>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-file-signature"></i>
+                        <b class="white">Name: &nbsp;</b>
+                        <span class="numt" id="fname"> Username Goes Here...</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <b class="white">Points: &nbsp;</b>
+                        <span id="mainPoints" class="num nump">666</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                        <b class="white">Episodes downloaded: &nbsp;</b>
+                        <span class="numt" id="ep-downloaded">666</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-battery-three-quarters"></i>
+                        <b class="white">Status: &nbsp;</b>
+                        <span class="stts" id="stts">Status Goes Here...</span>
+                    </li>
+
+                    <li class="waiting-stts">
+                        <i class="fa-regular fa-circle-pause"></i>
+                        <b class="white">Waiting Time: &nbsp;</b>
+                        <span id="eat" class="stts">⌛</span>
+                        <ul class="maelekezoWaiting">
+                            <li><sup>*</sup>Points below 5 = 7 seconds</li>
+                            <li class="li2"><sup>*</sup>Points above 5 = 15 seconds</li>
+                            <li class="li3"><sup>*</sup>Points above 40 = 30 seconds</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+
+                <div class="buttons">
+                    <button id="real" class="real" data-bs-toggle="modal" data-bs-target="#pointsModal">
+                        <i class="fa-solid fa-circle-plus"></i> CLICK TO ADD POINTS
+                    </button>
+                    <button id="shadow" class="shadow" disabled>
+                        <i class="fa-solid fa-circle-pause"></i> WAITING . . . <span id="wait" class="wait">00</span>
+                        sec
+                    </button>
+                    <span class="above">⚠ Click above to increase your points.</span>
+                </div>
+            </div>
+        </div>
+        <div class="table" >
+            <table id="rankTable" class="table table-striped table-dark table-bordered caption-top">
+                <caption>Drama Store Bot Top Users</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Points</th>
+                    <th scope="col">Ep. Downloaded</th>
+                  </tr>
+                </thead>
+                <tbody id="ranktbody">
+                  
+                </tbody>
+            </table>
+            <div id="spinnerTable" class="spinner-4"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <div class="left">
+                <span id="footerFont">TEXT FONT CHANGER V0.1</span> <br>
+                Created With Love ❤ By Shemdoe <br>
+                <span id="yaLeo"></span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="./contact.html">Contact Us</a> </li>
+                    <li><a href="./privacy.html">Privacy Policy</a> </li>
+                    <li><a href="./terms.html">Terms of Use</a> </li>
+                    <li><a href="./about.html">About Us</a> </li>
+                    <li><a href="./disclaimer.html">Disclaimer</a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+    <!-- Modal -->
+    <div class="modal fade" id="pointsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="pointsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pointsModalLabel">
+                        Loading... ⏳
+                    </h5>
+                    <button type="button" class="btn-close closeM" data-bs-dismiss="modal" aria-label="Close"
+                        onclick="closeModal()"></button>
+                </div>
+                <div id="body1" class="modal-body">
+                    <div class="spinner-4 modalSpinner"></div>
+                    <div class="modalDesc">
+                        <span class="tick">
+                            ✔
+                        </span>
+                        <span class="youInc" style="display: block;">
+                            You added +1 point to your points balance, you have now
+                        </span>
+                        <span id="youhave" class="youhave">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn footerbtn btn-primary" data-bs-dismiss="modal"
+                        onclick="closeModal()"><i class="fa-solid fa-circle-plus"></i> Add More
+                        Points</button>
+                    <div class="dots-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Lobster&family=Marck+Script&family=Shadows+Into+Light&family=Acme&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 24px !important;
+    margin-bottom: 32px !important;
+}
+
+.navbar .container-fluid {
+    max-width: 1000px !important;
+}
+
+.navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+    border: 1px brown solid;
+    border-radius: 8px;
+    padding: 24px !important;
+    font-size: xx-large;
+    margin-right: 15% !important;
+}
+
+.navbar-nav {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.navbar .nav-item {
+    border: 1px brown solid !important;
+    border-radius: 2px;
+    padding: 4px !important;
+    margin-right: 4px;
+}
+.navbar .nav-item:hover {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+#input0 {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    border-bottom: 2px lightgray solid;
+    box-shadow: 0 12px 8px -12px black;
+}
+
+#input0 textarea {
+    height: 100px;
+    width: 75%;
+    max-width: 900px;
+    border-radius: 60px;
+    border: gray double 6px;
+    resize: none;
+    padding: 24px;
+    text-align: center;
+}
+
+#input0 .type {
+    font-family: 'Acme', fantasy;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#results {
+    background-color: aliceblue;
+    max-width: 100%;
+}
+
+#results div {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    margin: 16px auto;
+    padding: 16px;
+    border-bottom: 1px lightgray solid;
+    border-top: 1px lightgray solid;
+}
+
+hr {
+    color: lightgray !important;
+    width: 25%;
+}
+
+textarea {
+    height: 60px;
+    font-size: large;
+}
+
+#results textarea {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-left: 2px brown solid;
+    border-top: 2px brown solid;
+    border-bottom: 2px brown solid;
+    border-right: none;
+    width: 70%;
+    cursor: not-allowed;
+    background-color: white;
+    padding: 12px;
+    resize: none;
+}
+
+#results div span {
+    width: 20%;
+    margin-right: 8px;
+    font-family: 'Acme', fantasy;
+    font-size: 16px;
+}
+
+#results textarea:focus {
+    outline: none;
+}
+
+#results button {
+    height: 60px;
+    border-left: none;
+    border-right: 2px brown solid;
+    border-top: 2px brown solid;
+    border-bottom: 2px brown solid;
+    font-size: large;
+    padding: 5px 5px;
+    margin-top: 2px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#results button i {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+/* header {
+    text-align: center;
+    color: white;
+    background-color: yellowgreen;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    font-family: 'Press Start 2P', cursive;
+} */
+
+#main-span {
+    font-family: 'Marck Script', cursive;
+    font-size: medium;
+    display: block;
+    padding: 8px;
+}
+
+#insta {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#wa {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#fb {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+}
+
+#tg {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#tt {
+    font-family: 'Parisienne', cursive;
+}
+
+::placeholder {
+    font-family: 'Marck Script', cursive;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    width: 100%;
+    font-family: 'Carter One', cursive;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 32px 12px;
+}
+
+footer .left {
+    width: 59%;
+}
+
+footer .right {
+    width: 39%;
+}
+
+#footerFont {
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer .right a {
+    text-decoration: underline;
+    color: white;
+    font-family: fantasy;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+
+
+@media screen and (min-width: 320px) {
+    
+}
+
+@media screen and (min-width: 470px) {
+}
+
+@media screen and (min-width: 600px) {
+    .descriptins .wrapper li {
+        font-size: 22px !important;
+    }
+
+    textarea {
+        font-size: 24px !important;
+        padding: 8px !important;
+    }
+}
+
+#shemdoe, #yaLeo {
+    font-family: 'Carter One', cursive;
+}
+
+#input0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#body2 {
+    margin: 0 auto;
+    background-color: aliceblue;
+    width: 95%;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#span {
+    display: block;
+    margin: 16px auto;
+    text-align: center;
+}
+
+.descriptins {
+    background-color: lightgray;
+    padding: 48px 24px;
+    font-family: fantasy;
+    font-size: 16px;
+}
+
+.descriptins .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.descriptins .wrapper ul {
+    margin-top: 52px;
+    list-style: none;
+}
+
+.descriptins .wrapper ul li::before {
+    content: '◾ ';
+}
+
+.descriptins h1 {
+    font-size: 28px;
+    font-weight: bold;
+}

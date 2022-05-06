@@ -1,6 +1,6 @@
 // to avoid variable confilicts assign variable with unique names
 
-let domainForTableJs = `http://localhost:3000`
+let domainForTableJs = `https://netdramastore.herokuapp.com`
 let spinnerTable = document.getElementById('spinnerTable')
 let rankTable = document.getElementById('rankTable')
 let ranktbody = document.getElementById('ranktbody')

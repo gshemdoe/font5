@@ -50,11 +50,16 @@
     height: 100px;
     width: 75%;
     max-width: 900px;
-    border-radius: 60px;
     border: gray double 6px;
     resize: none;
     padding: 24px;
     text-align: center;
+}
+
+@media (max-width: 420px) {
+    #input0 textarea {
+        width: 100%;
+    }
 }
 
 #input0 .type {

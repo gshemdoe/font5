@@ -1,0 +1,10 @@
+.ads {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 12px auto;
+}

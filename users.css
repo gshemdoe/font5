@@ -65,21 +65,70 @@ html {
     border-right: none !important;
 }
 
+.parentBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.parentBody .maelezoG {
+    width: 95%;
+    margin: 12px auto;
+    padding: 0 16px 16px 16px;
+    border-bottom: 1px lightgray solid;
+    border-right: 1px lightgray solid;
+    border-left: 1px lightgray solid;
+}
+
+.parentBody .maelezoG .promoted {
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 2px;
+    margin-top: 0;
+    font-family: 'Acme', fantasy;
+}
+
+.parentBody .maelezoG h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Acme', fantasy;
+}
+
+.parentBody .maelezoG h2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Acme', fantasy;
+}
+
+.parentBody .maelezoG a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.parentBody .maelezoG .poster {
+    background-color: lightblue;
+    border-radius: 2px;
+    padding: 2px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.mainbox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 12px auto;
+    border-right: 1px lightgray solid;
+}
+
 .userbox {
     width: 95%;
-    border: 4px gray solid;
-    margin: 12px auto;
+    margin: 0 auto;
     padding: 24px 12px;
     border-radius: 8px;
     background-color: black; /* dynamic later */
-}
-
-.userbox .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.userbox {
     background-color: black;
     color: gold;
     height: fit-content;
@@ -252,16 +301,6 @@ html {
     color: gold;
 }
 
-.mainbox {
-    display: flex;
-    justify-content: center;
-    padding: 12px;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1024px;
-    margin: 12px auto;
-}
-
 .mainbox .table table{
     display: none;
     font-family: 'Acme';
@@ -426,9 +465,19 @@ footer .right a {
     }
 }
 
-@media (min-width: 900px) {
-    .mainbox {
+@media (min-width: 800px) {
+    .parentBody {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .parentBody .mainbox {
+        width: 48%;
+    }
+    .parentBody .maelezoG {
+        width: 48%;
+        border-left: unset;
+        border-right: unset;
     }
 }
 

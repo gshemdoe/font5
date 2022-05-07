@@ -27,6 +27,10 @@
     margin-right: 0 !important;
 }
 
+#navbarSupportedContent ul {
+    margin-right: -12px !important;
+}
+
 .navbar .nav-item {
     border: 1px brown solid !important;
     border-radius: 2px;

@@ -36,7 +36,7 @@ html {
 }
 
 .navbar .container-fluid {
-    max-width: 1000px !important;
+    max-width: 1024px !important;
 }
 
 .navbar-brand {
@@ -51,6 +51,10 @@ html {
 .navbar-nav {
     margin-left: auto !important;
     margin-right: 0 !important;
+}
+
+#navbarSupportedContent ul {
+    margin-right: -12px !important;
 }
 
 .navbar .nav-item {
@@ -68,15 +72,23 @@ html {
 .parentBody {
     display: flex;
     flex-direction: column;
+    max-width: 1032px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .parentBody .maelezoG {
     width: 95%;
     margin: 12px auto;
-    padding: 0 16px 16px 16px;
     border-bottom: 1px lightgray solid;
     border-right: 1px lightgray solid;
     border-left: 1px lightgray solid;
+}
+
+.parentBody .maelezoG .wrapper {
+    padding: 0 16px 16px 16px;
+    margin: 0;
+    text-align: justify;
 }
 
 .parentBody .maelezoG .promoted {
@@ -305,6 +317,7 @@ html {
 .mainbox .table table{
     display: none;
     font-family: 'Acme';
+    font-size: medium;
     width: 95%;
     margin: 16px auto;
 }
@@ -312,14 +325,10 @@ html {
 table caption {
     font-size: larger;
     color: white;
-    background-color: rgb(43, 40, 40);
-    margin-bottom: 8px;
+    background-color: #212529;
     margin-top: -2px;
     text-align: center;
-    padding: 8px;
-    border-top: gray 4px solid;
-    border-right: gray 4px solid;
-    border-left: gray 4px solid;
+    padding: 12px 8px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -329,7 +338,7 @@ table caption {
     color: black;
     padding: 0 2px;
     border-radius: 2px;
-    font-size: smaller;
+    font-size: x-small;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +395,7 @@ footer {
 footer .wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: 1024px;
     align-items: center;
     margin: 0 auto;
     padding: 32px 12px;
@@ -474,6 +483,7 @@ footer .right a {
     }
     .parentBody .mainbox {
         width: 48%;
+        border-left: 1px solid lightgray;
     }
     .parentBody .maelezoG {
         width: 48%;
@@ -491,5 +501,10 @@ footer .right a {
 
     .userbox .title {
         font-size: 18px;
+    }
+
+    .ads {
+        border-left: none;
+        border-right: none;
     }
 }

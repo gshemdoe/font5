@@ -1,20 +1,10 @@
 .ads {
     width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 8px;
     border: 1px solid lightgray;
     border-radius: 2px;
     margin: 12px auto;
-}
-
-@media (max-width: 650px) {
-    .ads {
-        flex-direction: column;
-    }
-
-    .ads .firstChild {
-        margin-bottom: 12px !important;
-    }
 }

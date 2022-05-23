@@ -6,7 +6,7 @@ if(mainUrl.includes('?nano=')) {
     let wait = document.getElementById('wait')
     let real = document.getElementById('real')
     let waitButton = document.getElementById('waitB')
-    let count = 7
+    let count = 10
 
     real.setAttribute('onclick', `openTg('${nano}')`)
 

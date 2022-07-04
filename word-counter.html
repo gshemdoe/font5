@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Word counter | Count words free online && Count text characters">
+    <meta name="keywords" content="word counter free online, text counter, character counter">
 
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,9 +24,9 @@
     <!-- home-css -->
     <link rel="stylesheet" href="./donotcache/home-css.css">
     <link rel="stylesheet" href="./donotcache/style.css">
-    <title>FONT5 | Text Font Changer</title>
+    <title>FONT5 | Word Counter</title>
     <!-- our script -->
-    <script src="./donotcache/script.js" defer></script>
+    <script src="./donotcache/word.js" defer></script>
     <script src="./donotcache/global.js" defer></script>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
@@ -75,103 +77,23 @@
             <div class="left">
                 <div class="ftitle">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
-                    Font5 Tool
+                    Word & Characters Counter Tool
                 </div>
-                <div class="input0">
-                    <span class="type">Type the text you want to change its font below.</span>
-                    <span id="main-span">You can use it for your <span id="wa">WhatsApp
-                            Status,</span> <span id="insta">Instagram bio</span>, <span id="fb">Facebook Posts and
-                            Messages</span>,<span id="tg">Telegram Posts and messages!</span> ,<span id="tt">Twitter,
-                            etc.</span>
-                    </span>
-                    <input type="text" id="input1" placeholder=" Type here the text . . . . ✍">
-                </div>
-                <div class="fonts">
-                    <!-- bbs font -->
-                    <div class="bbs fontgroup">
-                        <div class="title">
-                            Bold Basic Script Font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="thnRbt" placeholder="𝓔𝔁𝓪𝓶𝓹𝓵𝓮 𝓯𝓸𝓷𝓽" readonly>
-
-                            <button id="copy1"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
+                <div class="beseni">
+                    <div class="bhead">
+                        <h3><span id="words">0</span> Words</h3> |
+                        <h3><span id="char">0</span> Characters</h3> |
+                        <h3><span id="lines">0</span> Lines</h3>
                     </div>
-                    <!-- bff font -->
-                    <div class="bff fontgroup">
-                        <div class="title">
-                            Bold Frankfurt Font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="rnchrs" placeholder="𝕰𝖝𝖆𝖒𝖕𝖑𝖊 𝖋𝖔𝖓𝖙" readonly>
-
-                            <button id="copy2"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
+                    <div class="bbody">
+                        <textarea id="beseni" cols="30" rows="10" placeholder="Enter your text here..." oninput="countWord()"></textarea>
                     </div>
-                    <!-- dsf font -->
-                    <div class="dsf fontgroup">
-                        <div class="title">
-                            Double Struck Font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="x2" readonly placeholder="𝔼𝕩𝕒𝕞𝕡𝕝𝕖 𝕗𝕠𝕟𝕥">
-                            <button id="copy3"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
-                    </div>
-                    <!-- fbf font -->
-                    <div class="fbf fontgroup">
-                        <div class="title">
-                            Fantansy Bold Font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="x3" readonly placeholder="𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝐟𝐨𝐧𝐭">
-                            <button id="copy4"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
-                    </div>
-                    <!-- fbif font -->
-                    <div class="fbif fontgroup">
-                        <div class="title">
-                            Fantansy Bold Italic Font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="x4" readonly placeholder="𝑬𝒙𝒂𝒎𝒑𝒍𝒆 𝒇𝒐𝒏𝒕">
-                            <button id="copy5"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
-                    </div>
-                    <!-- black square font -->
-                    <div class="dsf fontgroup">
-                        <div class="title">
-                            Black Square Font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="x5" readonly placeholder="🅴🆇🅰🅼🅿🅻🅴 🅵🅾🅽🆃">
-                            <button id="copy6"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
-                    </div>
-                    <!-- lbbf font -->
-                    <div class="lbbf fontgroup">
-                        <div class="title">
-                            Light/Black Buble Font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="x6" readonly placeholder="Ⓔⓧⓐⓜⓟⓛⓔ ⓕⓞⓝⓣ">
-                            <button id="copy7"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
-                    </div>
-                    <!-- xaxb font -->
-                    <div class="xaxb fontgroup">
-                        <div class="title">
-                            xx above xx below font
-                        </div>
-                        <div class="input">
-                            <input type="text" id="x8" readonly placeholder="E͓̽x͓̽a͓̽m͓̽p͓̽l͓̽e͓̽ f͓̽o͓̽n͓̽t͓̽">
-                            <button id="copy9"><i class="fa-solid fa-copy"></i> Copy!</button>
-                        </div>
+                    <div class="resetBtn">
+                        <button id="reset" onclick="reset()">RESET</button>
                     </div>
                 </div>
                 <div class="thanks">
-                    Thank you for using Font5
+                    Thank you for using Font5 | Word Counter
                 </div>
                 <div class="descriptins">
                     <div class="what cont">

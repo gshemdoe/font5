@@ -1,0 +1,193 @@
+
+.left .bheader {
+    padding: 9px 12px;
+    color: gray;
+    font-size: larger;
+    border-bottom: 2px lightgray solid;
+    background-color: white;
+}
+
+.left .bheader span,
+.left .admin span {
+    display: inline-block;
+}
+
+.left .post-title {
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    margin-top: 12px;
+    padding: 12px;
+    background-color: white;
+}
+
+.left .admin {
+    color: gray;
+    margin-bottom: 4px;
+    padding: 12px;
+}
+
+.left .admin .name {
+    padding-right: 8px;
+    border-radius: 168px;
+    color: brown;
+    cursor: pointer;
+}
+
+.left .postBody {
+    background-color: white;
+    padding: 12px;
+    border-bottom: 2px lightgray solid;
+    text-align: justify;
+}
+
+.left .tags {
+    display: flex;
+    background-color: white;
+    margin-top: 12px;
+    padding: 12px;
+    border-bottom: 2px lightgray solid;
+}
+
+.left .tags .tag {
+    margin-left: 8px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    padding: 8px 12px;
+    color: brown;
+    font-size: small;
+    cursor: pointer;
+}
+
+.left .like {
+    background-color: white;
+    height: 300px;
+    margin-top: 12px;
+    padding: 12px;
+    border-bottom: 2px lightgray solid;
+}
+
+.left .like .title,
+.left .comment .title {
+    font-size: larger;
+}
+
+.left .comment {
+    background-color: white;
+    border-bottom: 2px lightgray solid;
+    padding: 12px;
+}
+
+.comment {
+    background-color: white;
+    padding: 12px;
+    border-bottom: 2px lightgray solid;
+    margin-top: 12px;
+}
+
+.comment .body {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment .body .child {
+    margin-bottom: 12px;
+}
+
+.comment label {
+    display: block;
+    color: gray;
+    font-size: large;
+}
+
+.comment textarea {
+    width: 100%;
+}
+
+.comment .names {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment input {
+    width: 100%;
+}
+
+.comment .name,
+.comment .email {
+    width: 48%;
+}
+
+.comment .btn {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.comment .btn button {
+    background-color: brown;
+    color: white;
+    font-size: large;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* HOME PAGE STYLING */
+
+.left .youMay {
+    color: black;
+    font-family: fantasy;
+    font-size: larger;
+    padding: 12px;
+    margin-top: 16px;
+}
+
+.left .postCont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 12px;
+}
+
+.left .postCont .flexPosts {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 12px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.left .postCont .flexPosts:hover {
+    border: 1px brown solid;
+}
+
+.flexPosts .fpheader {
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+}
+
+.flexPosts .desc {
+    color: gray;
+    text-align: justify;
+    padding: 16px 8px 16px 16px;
+}
+
+.flexPosts .desc .readMore {
+    color: #f57878;
+}
+
+@media (max-width: 460px) {
+    .flexPosts {
+        width: 95% !important;
+        margin: 16px auto !important;
+    }
+}

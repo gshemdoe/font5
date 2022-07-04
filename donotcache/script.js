@@ -132,71 +132,79 @@ function geneneration1() {
 
 
 document.getElementById('copy1').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy1')
     let answer = document.getElementById('thnRbt');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 document.getElementById('copy2').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy2')
     let answer = document.getElementById('rnchrs');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 
 document.getElementById('copy3').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy3')
     let answer = document.getElementById('x2');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 
 document.getElementById('copy4').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy4')
     let answer = document.getElementById('x3');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 
 document.getElementById('copy5').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy5')
     let answer = document.getElementById('x4');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 document.getElementById('copy6').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy6')
     let answer = document.getElementById('x5');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 document.getElementById('copy7').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy7')
     let answer = document.getElementById('x6');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 
 document.getElementById('copy9').addEventListener('click', () => {
+    let cbtn = document.getElementById('copy9')
     let answer = document.getElementById('x8');
     answer.select();
     answer.setSelectionRange(0, 9999999999999);
     document.execCommand('copy');
-    showing1();
+    showing1(cbtn);
 });
 
 
@@ -211,6 +219,14 @@ var sekunde = tarehe.getSeconds()
 
 document.getElementById('yaLeo').innerHTML = leo + "/" + mwezi + "/" + mwaka
 
-function showing1() {
-    alert('Font copied to clipboard successfully, go paste it anywhere')
+function showing1(copyBtn) {
+    let defaultHTML = copyBtn.innerHTML
+    copyBtn.style.backgroundColor = 'green'
+    copyBtn.style.color = 'white'
+    copyBtn.innerText = 'Copied ✔'
+    setTimeout(()=>{
+        copyBtn.style.backgroundColor = ''
+        copyBtn.style.color = ''
+        copyBtn.innerHTML = defaultHTML
+    }, 2000)
 }

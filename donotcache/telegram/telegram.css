@@ -1,18 +1,4 @@
-     *,
-     *::after,
-     *::before {
-         box-sizing: border-box;
-     }
 
-     html {
-         background-color: whitesmoke;
-     }
-
-     body {
-         margin: 0 auto;
-         width: 100%;
-         max-width: 1024px;
-     }
 
      .telegramWrapper {
          display: flex;
@@ -49,10 +35,10 @@
 
      .tgBody {
          width: 95%;
-         margin: 12px auto;
+         margin: 32px auto;
          border-left: 12px dodgerblue solid;
          border-right: 12px dodgerblue solid;
-         padding: 16px 8px;
+         padding: 32px 8px;
          border-radius: 24px;
      }
 
@@ -114,7 +100,7 @@
      .caption {
          width: 80%;
          text-align: center;
-         margin: auto;
+         margin: 12px auto;
          padding: 8px;
      }
 

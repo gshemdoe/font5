@@ -24,7 +24,7 @@ if(mainUrl.includes('?nano=')) {
 }
 
 else {
-    document.querySelector('.one').style.display = 'none'
+    window.open('/', '_self')
 }
 
 function openTg(nano) {

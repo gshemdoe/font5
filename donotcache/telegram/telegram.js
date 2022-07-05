@@ -1,10 +1,10 @@
 const mainUrl = window.location.href
 
 if(mainUrl.includes('?msgid=777shemdoe')) {
-    let data = mainUrl.split('777shemdoe')
-    let msgid = data[1]
-    let size = data[2]
-    let epno = data[3]
+    let tData = mainUrl.split('777shemdoe')
+    let msgid = tData[1]
+    let size = tData[2]
+    let epno = tData[3]
 
     let wait = document.getElementById('wait')
     let real = document.getElementById('real')
@@ -28,7 +28,7 @@ if(mainUrl.includes('?msgid=777shemdoe')) {
 }
 
 else {
-    document.querySelector('.one').style.display = 'none'
+    window.open('/', '_self')
 }
 
 function openTg(msgid, epno, size) {

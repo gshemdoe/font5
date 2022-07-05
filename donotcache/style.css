@@ -91,7 +91,6 @@ body {
     color: white;
     padding: 12px 8px;
     font-weight: bold;
-    font-family: fantasy;
 }
 
 .main .right {
@@ -117,7 +116,6 @@ body {
     color: white;
     padding: 12px 8px;
     font-weight: bold;
-    font-family: fantasy;
 }
 
 .right .body {
@@ -176,7 +174,6 @@ footer .right ul {
 footer .right a {
     text-decoration: none;
     color: white;
-    font-family: fantasy;
     display: block;
     margin-bottom: 8px;
 }

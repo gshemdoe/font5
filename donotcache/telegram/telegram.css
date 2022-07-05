@@ -46,7 +46,6 @@
          text-align: center;
          margin: 12px auto 24px auto;
          font-size: 20px;
-         font-family: fantasy;
          width: 95%;
      }
 
@@ -70,7 +69,6 @@
      }
 
      .button button {
-         font-family: fantasy;
          font-weight: bolder;
          color: white;
          background-color: #33d684;
@@ -133,7 +131,6 @@
          color: white;
          font-size: 22px;
          font-weight: bold;
-         font-family: fantasy;
          padding: 8px;
          margin: 0;
      }
@@ -141,7 +138,6 @@
      .t-tips .t {
          font-size: 20px;
          font-weight: bold;
-         font-family: fantasy;
          margin-bottom: -8px;
          margin-top: 32px;
      }

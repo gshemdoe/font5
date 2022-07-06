@@ -304,6 +304,10 @@ table caption {
     border-radius: 4px;
 }
 
+.modal-footer #ftbtn:hover {
+    background-color: black;
+}
+
 
 
 footer {

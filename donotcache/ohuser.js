@@ -151,3 +151,38 @@ function closeModal() {
     let rano = Math.floor(1000 + Math.random() * 9000)
     window.open(`/pages/usersohpoints.html?userid=OH${userId}/randpage/${rano}`, '_self')
 }
+
+
+//subiri implementation
+let wting = document.getElementById('timing5')
+let scrollToBtn = document.getElementById('scrollTo')
+let subiriCont2 = document.querySelector('.subiriCont2')
+let subiriCont1 = document.querySelector('.subiriCont1')
+let subiriTime = 5
+let ourUserBox = document.getElementById('userbox')
+let subiriMainCont = document.getElementById('subiriMainCont')
+
+ourUserBox.style.display = 'none'
+
+let subiriInterval = setInterval(() => {
+    subiriTime--
+    wting.innerText = '0' + subiriTime
+    if (subiriTime == 0) {
+        clearInterval(subiriInterval)
+        subiriCont1.style.display = 'none'
+        subiriCont2.style.display = 'block'
+        ourUserBox.style.display = 'block'
+    }
+}, 1000)
+
+scrollToBtn.addEventListener('click', () => {
+    subiriMainCont.style.display = 'none'
+    
+    if(ourUserBox.style.display == 'none') {
+        ourUserBox.style.display = 'block'
+    }
+
+    ourUserBox.scrollIntoView({
+        behavior: 'smooth'
+    })
+})

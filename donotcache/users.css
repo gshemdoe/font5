@@ -53,7 +53,8 @@
     margin: 24px auto;
     padding: 24px 12px;
     border-radius: 8px;
-    background-color: black; /* dynamic later */
+    background-color: black;
+    /* dynamic later */
     background-color: black;
     color: gold;
     height: fit-content;
@@ -144,6 +145,7 @@
 .red .stts {
     color: red;
 }
+
 .red .waiting-stts {
     display: none;
 }
@@ -183,8 +185,7 @@
 }
 
 .userbox .buttons .real:active,
-.userbox .buttons .real:hover
-{
+.userbox .buttons .real:hover {
     background-color: white;
     color: green;
     box-shadow: none;
@@ -217,8 +218,7 @@
 }
 
 .userbox .waiting-stts ul .li2,
-.userbox .waiting-stts ul .li3
- {
+.userbox .waiting-stts ul .li3 {
     margin-top: -14px;
 }
 
@@ -226,7 +226,7 @@
     color: gold;
 }
 
-.table table{
+.table table {
     display: none;
     font-family: 'Acme';
     font-size: medium;
@@ -341,8 +341,52 @@ footer .right a {
     margin-bottom: 8px;
 }
 
-#shemdoe, #yaLeo {
+#shemdoe,
+#yaLeo {
     font-family: 'Carter One', cursive;
+}
+
+/* subiri css */
+.subiri {
+    background-color: white;
+    padding: 12px;
+    box-shadow: 2px 2px 2px lightgray;
+    width: 95%;
+    margin: 24px auto 12px auto;
+}
+
+.subiri .profileNm {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.subiri .profileNm,
+.subiri .wting,
+.subiri .subiriCont2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.subiri .wting {
+    color: gray;
+}
+
+.subiriCont2 {
+    display: none;
+}
+
+.subiri .subiriCont2 button {
+    border: none;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    background-color: brown;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.subiri .subiriCont2 button:hover {
+    background-color: black;
 }
 
 @media (max-width: 420px) {
@@ -355,6 +399,7 @@ footer .right a {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
     .ftitle {
         width: 100% !important;
     }

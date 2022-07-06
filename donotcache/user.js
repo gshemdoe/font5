@@ -17,6 +17,7 @@ const wait = document.getElementById('wait')
 const youhave = document.getElementById('youhave')
 const modalReal = document.querySelectorAll('.modalReal')
 const footerbtn = document.querySelector('.footerbtn')
+const ftbtn = document.getElementById('ftbtn')
 const modalDesc = document.querySelector('.modalDesc')
 const dots5 = document.querySelector('.loaderButton')
 const spinner4 = document.querySelector('.loaderModal')
@@ -124,6 +125,10 @@ real.addEventListener('click', async () => {
         mainPoints.innerText = data.points
         dots5.style.display = 'none'
         spinner4.style.display = 'none'
+
+        let rano2 = Math.floor(1000 + Math.random() * 9000)
+        ftbtn.setAttribute('href', `/pages/users.html?userid=DS${userId}/randpage/${rano2}`)
+
         footerbtn.style.display = 'block'
         modalDesc.style.display = 'flex'
         real.style.display = 'none'

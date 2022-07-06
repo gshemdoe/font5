@@ -17,6 +17,7 @@ const wait = document.getElementById('wait')
 const youhave = document.getElementById('youhave')
 const modalReal = document.querySelectorAll('.modalReal')
 const footerbtn = document.querySelector('.footerbtn')
+const ftbtn = document.getElementById('ftbtn')
 const modalDesc = document.querySelector('.modalDesc')
 const dots5 = document.querySelector('.loaderButton')
 const spinner4 = document.querySelector('.loaderModal')
@@ -67,6 +68,7 @@ async function loadOhUser() {
     if (href.includes('?userid=OH')) {
         let id = href.split('?userid=OH')[1].split('/randpage')[0].trim()
         userId = id
+        console.log(userId)
         let url = `${domain}/newuser-oh/${id}`
 
         fname.innerText = 'Loading... ⏳'
@@ -121,6 +123,10 @@ real.addEventListener('click', async () => {
         mainPoints.innerText = data.points
         dots5.style.display = 'none'
         spinner4.style.display = 'none'
+
+        let rano2 = Math.floor(1000 + Math.random() * 9000)
+        ftbtn.setAttribute('href', `/pages/usersohpoints.html?userid=OH${userId}/randpage/${rano2}`)
+
         footerbtn.style.display = 'block'
         modalDesc.style.display = 'flex'
         real.style.display = 'none'

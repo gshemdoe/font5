@@ -7,6 +7,7 @@ var dakika = tarehe.getMinutes()
 var sekunde = tarehe.getSeconds()
 
 const domain = `https://netdramastore.herokuapp.com`
+// const domain = `http://localhost:3000`
 
 
 document.getElementById('yaLeo').innerHTML = leo + "/" + mwezi + "/" + mwaka
@@ -29,6 +30,8 @@ const epDownloaded = document.getElementById('ep-downloaded')
 const stts = document.getElementById('stts')
 const modalFname = document.getElementById('pointsModalLabel')
 const userbox = document.getElementById('userbox')
+let pftitle = document.getElementById('pftitle')
+let bodytxt = document.getElementById('bodytxt')
 
 function waiting(points) {
     let counting = 7
@@ -80,22 +83,27 @@ async function loadDramastore() {
             let res = await fetch(url)
             let data = await res.json()
 
-            if (data.res == 'user not found') {
+            if (data[0].res == 'user not found') {
                 let onyo = confirm(`User ID does not exist in our database, You'll be redirected to the homepage`)
                 if (onyo == true || onyo == false) {
                     window.open('/', '_self')
                 }
             }
 
-            waiting(data.points)
+            waiting(data[0].points)
 
-            fname.innerText = data.fname.substring(0, 24)
-            mainPoints.innerText = data.points
-            epDownloaded.innerText = data.downloaded
+            fname.innerText = data[0].fname.substring(0, 24)
+            mainPoints.innerText = data[0].points
+            epDownloaded.innerText = data[0].downloaded
 
-            if (Number(data.points) > 0) {
+            if (Number(data[0].points) > 0) {
                 stts.innerText = 'Able to get files'
             } else { stts.innerText = 'Unable to get files' }
+
+            let randomPost = Math.floor(Math.random() * data[1].length)
+            pftitle.innerText = data[1][randomPost].title
+            bodytxt.innerHTML = data[1][randomPost].body.replace(/--/g, '<b>').replace(/__/g, '</b>').replace(/\n/g, '<br>')
+            window.document.title = data[1][randomPost].title
 
 
         } catch (error) {

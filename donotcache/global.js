@@ -20,7 +20,6 @@ async function loadSidePost() {
     }
 
     let data = await res.json()
-    console.log(data)
 
     //showing recent posts
     data[0].forEach(rp => {

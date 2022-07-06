@@ -306,3 +306,47 @@ footer .right a {
         font-size: 16px;
     }
 }
+
+
+/* subiri css */
+.subiri {
+    background-color: white;
+    padding: 12px;
+    box-shadow: 2px 2px 2px lightgray;
+    width: 95%;
+    margin: 24px auto 12px auto;
+}
+
+.subiri .profileNm {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.subiri .profileNm,
+.subiri .wting,
+.subiri .subiriCont2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.subiri .wting {
+    color: gray;
+}
+
+.subiriCont2 {
+    display: none;
+}
+
+.subiri .subiriCont2 button {
+    border: none;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.subiri .subiriCont2 button:hover {
+    background-color: black;
+}

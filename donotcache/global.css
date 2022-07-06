@@ -1,9 +1,7 @@
 .ads {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
+    display: block;
+    text-align: center;
     border: 1px solid lightgray;
     border-radius: 2px;
     margin: 8px auto;

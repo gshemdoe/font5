@@ -132,7 +132,7 @@ real.addEventListener('click', async () => {
         dots5.style.display = 'none'
         spinner4.style.display = 'none'
 
-        let rano2 = Math.floor(1000 + Math.random() * 9000)
+        let rano2 = Math.floor(1 + Math.random() * 9)
         ftbtn.setAttribute('href', `/pages/usersohpoints.html?userid=OH${userId}/randpage/${rano2}`)
 
         footerbtn.style.display = 'block'
@@ -148,7 +148,7 @@ real.addEventListener('click', async () => {
 })
 
 function closeModal() {
-    let rano = Math.floor(1000 + Math.random() * 9000)
+    let rano = Math.floor(1 + Math.random() * 9)
     window.open(`/pages/usersohpoints.html?userid=OH${userId}/randpage/${rano}`, '_self')
 }
 

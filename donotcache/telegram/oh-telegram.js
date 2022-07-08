@@ -56,6 +56,7 @@ let subiriInterval = setInterval(() => {
 
 scrollToBtn.addEventListener('click', () => {
     subiriMainCont.style.display = 'none'
+    document.getElementById('ftitleToHide').style.display = 'none'
     
     if(ourUserBox.style.display == 'none') {
         ourUserBox.style.display = 'block'

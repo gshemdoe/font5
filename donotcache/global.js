@@ -41,8 +41,10 @@ async function loadSidePost() {
     })
 
     //showing page
-    mainBody.style.display = 'block'
-    loader.style.display = 'none'
+    setTimeout(() => {
+        mainBody.style.display = 'block'
+        loader.style.display = 'none'
+    }, 2000)
 }
 
 loadSidePost()

@@ -56,7 +56,7 @@ let subiriInterval = setInterval(() => {
         subiriCont2.style.display = 'block'
         ourUserBox.style.display = 'block'
     }
-}, 1000)
+}, 1500)
 
 scrollToBtn.addEventListener('click', () => {
     subiriMainCont.style.display = 'none'

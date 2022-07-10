@@ -180,7 +180,7 @@ let subiriInterval = setInterval(() => {
         ourUserBox.style.display = 'block'
         tableToHide.style.display = defaultTableDisplay
     }
-}, 1000)
+}, 1500)
 
 scrollToBtn.addEventListener('click', () => {
     subiriMainCont.style.display = 'none'

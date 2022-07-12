@@ -21,6 +21,18 @@ async function loadSidePost() {
 
     let data = await res.json()
 
+    //showing random post to telegram files
+    if (document.getElementById('tgpftitle') != null) {
+        let tgpftitle = document.getElementById('tgpftitle')
+        let tgbodytxt = document.getElementById('tgbodytxt')
+
+        let randomPost = Math.floor(Math.random() * data[1].length)
+        tgpftitle.innerText = data[1][randomPost].title
+        tgbodytxt.innerHTML = data[1][randomPost].body.replace(/--/g, '<b>').replace(/__/g, '</b>').replace(/\n/g, '<br>')
+        window.document.title = data[1][randomPost].title
+    }
+
+
     //showing recent posts
     data[0].forEach(rp => {
         //for side posts

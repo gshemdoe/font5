@@ -306,11 +306,9 @@ footer .right a {
 }
 
 @media (max-width: 420px) {
-
     .main,
     .main .left,
-    .maelezoG,
-    .ads {
+    .maelezoG {
         width: 100% !important;
         padding-left: 0 !important;
         padding-right: 0 !important;

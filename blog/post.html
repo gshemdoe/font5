@@ -8,18 +8,18 @@
     <meta name="robots" content="all" />
 
     <!-- adsense autoads -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5207543454842727"
-        crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5207543454842727"
+        crossorigin="anonymous"></script> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-602DBYFCDS"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-602DBYFCDS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-602DBYFCDS');
-    </script>
+    </script> -->
 
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,7 +36,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../donotcache/style.css">
     <link rel="stylesheet" href="../donotcache/blog.css">
+    <link rel="stylesheet" href="../donotcache/users.css">
+    <link rel="stylesheet" href="../donotcache/telegram/telegram.css">
     <script src="../donotcache/blog.js" defer></script>
+    <script src="../donotcache/telegram/telefilesblog.js" defer></script>
+
     <title>Blog Post | Font 5</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
@@ -85,6 +89,40 @@
         </header>
         <section class="main">
             <div class="left">
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                <!-- subiri for points start here -->
+                <div class="addingPtsBlog ddhide" id="addingPtsBlog">
+                    <div class="ftitle" id="ftitleToHide">
+                        <i class="fa-regular fa-building"></i>
+                        <span id="dynamicTitle"></span>
+                    </div>
+                    <br>
+                    <div class="subiri" id="subiriMainContPoints">
+                        <div class="subiriCont1" id="subiriCont1Points">
+                            <div class="profileNm">
+                                Fetching your info... ⏳
+                            </div>
+                            <div class="text-center">
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="wting">
+                                WAITING <span id="timing5Points">05</span>
+                            </div>
+                        </div>
+
+                        <div class="subiriCont2" id="subiriCont2Points">
+                            <button id="scrollTo">
+                                <i class="fa-solid fa-angles-down"></i>
+                                <span id="dynamicBtn"></span>
+                                <i class="fa-solid fa-angles-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- subiri for points ends here -->
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
                 <div class="bheader">
                     <span class="home">
                         <i class="fa-solid fa-house-circle-check"></i> Home </span> > <span class="blog">blog</span> >
@@ -93,21 +131,9 @@
                 <div class="post-title" id="ptitle">
                     Post Title Here
                 </div>
-                <div class="admin">
+                <div class="blog-admin">
                     <span class="name">By Font5 Admin</span>On
                     <span class="trh" id="pdate">Date Here</span>
-                </div>
-
-                <div class="ads">
-                    <script async
-                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5207543454842727"
-                        crossorigin="anonymous"></script>
-                    <!-- real-display-ad1 -->
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5207543454842727"
-                        data-ad-slot="8086748049" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
                 </div>
 
 
@@ -138,6 +164,172 @@
                 <div class="tags" id="tags">
 
                 </div>
+                <br>
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                <!-- dramastore contents start here -->
+                <div class="dramastoreTableAndUserBoxCont ddhide">
+                    <div class="table" id="tableToHide">
+                        <table id="rankTable" class="table table-striped table-dark table-bordered caption-top">
+                            <caption>Drama Store Bot Top Users</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Points</th>
+                                    <th scope="col">Ep. Downloaded</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ranktbody">
+
+                            </tbody>
+                        </table>
+                        <div class="text-center" id="spinnerTable">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="userbox" id="userboxDS">
+                        <h2 class="title">DRAMASTORE BOT | USER STATUS</h2>
+                        <hr><br>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-file-signature"></i>
+                                <b class="white">Name: &nbsp;</b>
+                                <span class="numt" id="fnameDS"> Username Goes Here...</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <b class="white">Points: &nbsp;</b>
+                                <span id="mainPointsDS" class="num nump">666</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                                <b class="white">Episodes downloaded: &nbsp;</b>
+                                <span class="numt" id="ep-downloadedDS">666</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-battery-three-quarters"></i>
+                                <b class="white">Status: &nbsp;</b>
+                                <span class="stts" id="sttsDS">Status Goes Here...</span>
+                            </li>
+
+                            <li class="waiting-stts">
+                                <i class="fa-regular fa-circle-pause"></i>
+                                <b class="white">Waiting Time: &nbsp;</b>
+                                <span id="eatds" class="stts">⌛</span>
+                                <ul class="maelekezoWaiting">
+                                    <li><sup>*</sup>Points below 5 = 7 seconds</li>
+                                    <li class="li2"><sup>*</sup>Points above 5 = 15 seconds</li>
+                                    <li class="li3"><sup>*</sup>Points above 40 = 30 seconds</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <hr>
+
+                        <div class="buttons">
+                            <button id="realDS" class="real" data-bs-toggle="modal" data-bs-target="#pointsModalDS">
+                                <i class="fa-solid fa-circle-plus"></i> CLICK TO ADD POINTS
+                            </button>
+                            <button id="shadowDS" class="shadow" disabled>
+                                <i class="fa-solid fa-circle-pause"></i> WAITING . . . <span id="waitDS"
+                                    class="wait">00</span>
+                                sec
+                            </button>
+                            <span class="above">⚠ Click above to increase your points.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- dramastore contents end here -->
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                <!-- ohmy content start Here -->
+                <div class="userbox userboxOH ddhide" id="userboxOH">
+                    <h2 class="title">OHMY! BOT | USER STATUS</h2>
+                    <hr><br>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-file-signature"></i>
+                            <b class="white">Name: &nbsp;</b>
+                            <span class="numt" id="fnameOH"> Username Goes Here...</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <b class="white">Points: &nbsp;</b>
+                            <span id="mainPointsOH" class="num nump">666</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-battery-three-quarters"></i>
+                            <b class="white">Status: &nbsp;</b>
+                            <span class="stts" id="sttsOH">Status Goes Here...</span>
+                        </li>
+
+                        <li class="waiting-stts">
+                            <i class="fa-regular fa-circle-pause"></i>
+                            <b class="white">Waiting Time: &nbsp;</b>
+                            <span id="eatoh" class="stts">⌛</span>
+                            <ul class="maelekezoWaiting">
+                                <li><sup>*</sup>Points below 5 = 7 seconds</li>
+                                <li class="li2"><sup>*</sup>Points above 5 = 15 seconds</li>
+                                <li class="li3"><sup>*</sup>Points above 40 = 30 seconds</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr>
+
+                    <div class="buttons">
+                        <button id="realOH" class="real" data-bs-toggle="modal" data-bs-target="#pointsModalOH">
+                            <i class="fa-solid fa-circle-plus"></i> CLICK TO ADD POINTS
+                        </button>
+                        <button id="shadowOH" class="shadow" disabled>
+                            <i class="fa-solid fa-circle-pause"></i> WAITING . . . <span id="waitOH"
+                                class="wait">00</span>
+                            sec
+                        </button>
+                        <span class="above">⚠ Click above to increase your points.</span>
+                    </div>
+                </div>
+                <!-- ohmy content end here -->
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+                <!-- episode contents -->
+                <div class="tgBody ddhide" id="tgBodyDSTG">
+                    <h2 class="kd">DRAMA STORE BOT</h2>
+                    <div class="logo-oh">
+                        <i class="fa-solid fa-file-video"></i>
+                    </div>
+                    <div class="caption">
+                        <h4>EPISODE <span id="ep"></span> <br><br> 👇👇</h4>
+                    </div>
+                    <div class="button">
+                        <button id="realDSTG"><b>OPEN IN TELEGRAM <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></b></button>
+                        <button class="wait" id="waitBDSTG">WAITING - <span id="waitDSTG">00</span> sec</button>
+                        <p style="font-size: smaller;"><i>⚠ click above to get the file.... In the bot click "START"</i>
+                        </p>
+                    </div>
+                </div>
+                <!-- episode content ends here -->
+
+                <!-- ohmy premium show start here -->
+                <div class="tgBody ddhide" id="tgBodyOHTG">
+                    <h2 class="kd">OH MY! CHANNEL BOT</h2>
+                    <div class="logo-oh">
+                        <i class="fa-solid fa-file-video"></i>
+                    </div>
+                    <div class="caption">
+                        <h4>GET FULL PREMIUM SHOW <br> <br> 👇👇</h4>
+                    </div>
+                    <div class="button">
+                        <button id="realOHTG"><b>OPEN IN TELEGRAM <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></b></button>
+                        <button class="wait" id="waitBOHTG">WAITING - <span id="waitOHTG">00</span> sec</button>
+                        <p style="font-size: smaller;"><i>⚠ click above to get the file.... In the bot click
+                                "START"</i> </p>
+                    </div>
+                </div>
+                <!-- ohmy premium show end here -->
+                <br>
                 <div class="youMay">
                     You May Also Like
                 </div>
@@ -216,6 +408,96 @@
     <div class="text-center loader">
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+
+    <!-- Dramastore Modal -->
+    <div class="modal fade" id="pointsModalDS" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="pointsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pointsModalLabelDS">
+                        Loading... ⏳
+                    </h5>
+                    <button id="closeModalXDS" type="button" class="btn-close closeM" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="body1DS" class="modal-body">
+                    <div class="text-center loaderModal" id="loaderModalDS">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="modalDesc" id="modalDescDS">
+                        <span class="tick">
+                            ✔
+                        </span>
+                        <span class="youInc" style="display: block;">
+                            You added +1 point to your points balance, you have now
+                        </span>
+                        <span id="youhaveDS" class="youhave">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn footerbtn" id="ftbtnDS">
+                        <i class="fa-solid fa-circle-plus"></i> Add More
+                        Points
+                    </a>
+                    <div class="text-center loaderButton" id="loaderBtn">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OH! MY Modal -->
+    <div class="modal fade" id="pointsModalOH" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="pointsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pointsModalLabelOH">
+                        Loading... ⏳
+                    </h5>
+                    <button id="closeModalXOH" type="button" class="btn-close closeM" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="body1OH" class="modal-body">
+                    <div class="text-center loaderModal" id="loaderModalOH">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="modalDesc" id="modalDescOH">
+                        <span class="tick">
+                            ✔
+                        </span>
+                        <span class="youInc" style="display: block;">
+                            You added +1 point to your points balance, you have now
+                        </span>
+                        <span id="youhaveOH" class="youhave">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn footerbtn" id="ftbtnOH">
+                        <i class="fa-solid fa-circle-plus"></i> Add More
+                        Points
+                    </a>
+                    <div class="text-center loaderButton" id="loaderBtnOH">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

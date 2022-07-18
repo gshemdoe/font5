@@ -6,67 +6,13 @@ if(mainUrl.includes('?msgid=777shemdoe')) {
     let size = tData[2]
     let epno = tData[3]
 
-    let wait = document.getElementById('wait')
-    let real = document.getElementById('real')
-    let waitButton = document.getElementById('waitB')
-    let count = 10
+    let posts = [
+        '62c84d54da06342665e31fb7',
+        '62ca86111afa2af6f7a1026c',
+        '62cd8fbe9de0786aafdb98b7'
+    ]
+    let rrnp = Math.floor(Math.random() * posts.length)
 
-    real.setAttribute('onclick', `openTg('${msgid}', '${epno}', '${size}')`)
-    document.getElementById('ep').innerText = `${epno} (${size} MB)`
-
-
-    let interval = setInterval(()=>{
-        count-=1
-        wait.innerText = count
-
-        if(count == 0) {
-            clearInterval(interval)
-            waitButton.style.display = 'none'
-            real.style.display = 'block'
-        }
-    }, 1500)
+    let url = `/blog/post.html?id=${posts[rrnp]}#getting-episode-dramaid=${msgid}&size=${size}&epno=${epno}`
+    window.open(url, '_self')
 }
-
-else {
-    window.open('/', '_self')
-}
-
-function openTg(msgid, epno, size) {
-    window.open(`tg://resolve?domain=dramastorebot&start=fromWeb${msgid}`)
-}
-
-
-//subiri implementation
-let wting = document.getElementById('timing5')
-let scrollToBtn = document.getElementById('scrollTo')
-let subiriCont2 = document.querySelector('.subiriCont2')
-let subiriCont1 = document.querySelector('.subiriCont1')
-let subiriTime = 5
-let ourUserBox = document.getElementById('tgBody')
-let subiriMainCont = document.getElementById('subiriMainCont')
-
-ourUserBox.style.display = 'none'
-
-let subiriInterval = setInterval(() => {
-    subiriTime--
-    wting.innerText = '0' + subiriTime
-    if (subiriTime == 0) {
-        clearInterval(subiriInterval)
-        subiriCont1.style.display = 'none'
-        subiriCont2.style.display = 'block'
-        ourUserBox.style.display = 'block'
-    }
-}, 1500)
-
-scrollToBtn.addEventListener('click', () => {
-    subiriMainCont.style.display = 'none'
-    document.getElementById('ftitleToHide').style.display = 'none'
-    
-    if(ourUserBox.style.display == 'none') {
-        ourUserBox.style.display = 'block'
-    }
-
-    ourUserBox.scrollIntoView({
-        behavior: 'smooth'
-    })
-})

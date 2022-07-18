@@ -8,7 +8,7 @@
 }
 
 .left .bheader span,
-.left .admin span {
+.left .blog-admin span {
     display: inline-block;
 }
 
@@ -21,13 +21,13 @@
     background-color: white;
 }
 
-.left .admin {
+.left .blog-admin {
     color: gray;
     margin-bottom: 4px;
     padding: 12px;
 }
 
-.left .admin .name {
+.left .blog-admin .name {
     padding-right: 8px;
     border-radius: 168px;
     color: brown;
@@ -189,4 +189,10 @@
         width: 95% !important;
         margin: 16px auto !important;
     }
+}
+
+
+/* dynamic conts */
+.ddhide {
+    display: none;
 }

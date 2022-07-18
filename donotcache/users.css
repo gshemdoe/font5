@@ -245,7 +245,8 @@ table caption {
     display: none;
 }
 
-.modal-footer #ftbtn {
+.modal-footer #ftbtnDS,
+.modal-footer #ftbtnOH {
     color: white;
     background-color: brown;
     padding: 12px;
@@ -254,8 +255,12 @@ table caption {
     border-radius: 4px;
 }
 
-.modal-footer #ftbtn:hover {
-    background-color: black;
+.modal-footer #ftbtnDS:hover,
+.modal-footer #ftbtnOH:hover,
+.modal-footer #ftbtnDS:active,
+.modal-footer #ftbtnOH:active {
+    background-color: gray;
+    color: lightgray;
 }
 
 

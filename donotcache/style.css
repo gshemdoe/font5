@@ -401,3 +401,28 @@ footer .right a {
     display: inline-block;
     margin-bottom: 8px;
 }
+
+
+/* direct request */
+.req_params {
+    display: none;
+}
+.or {
+    margin: 12px auto;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
+.req_direct {
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    margin: 8px auto;
+    cursor: pointer;
+}
+
+.req_direct:active,
+.req_direct:hover {
+    color: black;
+}

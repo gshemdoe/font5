@@ -78,10 +78,6 @@ async function send_ds_tg(msgid) {
     }
     else if (res.status == 404) {
         let cf = confirm(`Ooops! I couldn't send this file to you, the possible reason is that, you blocked Dramastore Bot on Telegram. Close this message and click "OPEN IN TELEGRAM" button to continue`)
-
-        if(cf == true || cf == false) {
-            window.location.reload()
-        }
     }
 }
 
@@ -100,10 +96,6 @@ async function send_oh_tg(nano) {
     }
     else if (res.status == 404) {
         let cf = confirm(`Ooops! I couldn't send this file to you, the possible reason is that, you blocked Booster Bot on Telegram or you never interacted with it. Close this message and click "OPEN IN TELEGRAM" button to continue`)
-
-        if(cf == true || cf == false) {
-            window.location.reload()
-        }
     }
 }
 

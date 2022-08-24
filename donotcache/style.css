@@ -416,7 +416,7 @@ footer .right a {
 .req_direct {
     color: dodgerblue;
     font-weight: bold;
-    font-size: medium;
+    font-size: 16px;
     text-align: center;
     margin: 8px auto;
     cursor: pointer;

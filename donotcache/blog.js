@@ -254,7 +254,7 @@ async function loadOHPoints() {
         let fnameOH = document.getElementById('fnameOH')
         let eatoh = document.getElementById('eatoh')
         let addingPtsBlog = document.querySelector('.addingPtsBlog')
-        let ftbtn = document.getElementById('ftbtnOH')
+        // let ftbtn = document.getElementById('ftbtnOH')
         let closeModalXOH = document.getElementById('closeModalXOH')
 
 
@@ -298,7 +298,7 @@ async function loadOHPoints() {
             //Add random post to footerBtn
             let rn = Math.floor(Math.random() * data[1].length)
             let rnPst = data[1][rn]._id
-            ftbtn.setAttribute('href', `/blog/post.html?id=${rnPst}#adding-points-ohmy-userid=OH${theUserId}`)
+            // ftbtn.setAttribute('href', `/blog/post.html?id=${rnPst}#adding-points-ohmy-userid=OH${theUserId}`)
             closeModalXOH.setAttribute('onclick', `window.open('/blog/post.html?id=${rnPst}#adding-points-ohmy-userid=OH${theUserId}', '_self')`)
 
         } catch (err) {
@@ -312,46 +312,46 @@ loadOHPoints()
 
 
 //ADDING POINTS BTN OHMY BOT
-document.getElementById('realOH').addEventListener('click', async () => {
+// document.getElementById('realOH').addEventListener('click', async () => {
 
-    //let domain = 'http://localhost:3000'
-    let domain = 'https://netdramastore.herokuapp.com'
-    let hashUrl = window.location.hash
-    let userId = hashUrl.split('userid=OH')[1]
+//     //let domain = 'http://localhost:3000'
+//     let domain = 'https://netdramastore.herokuapp.com'
+//     let hashUrl = window.location.hash
+//     let userId = hashUrl.split('userid=OH')[1]
 
-    try {
-        let res = await fetch(`${domain}/ohmy-add-points/user/${userId}`, {
-            method: 'GET',
-            mode: 'cors',
-            headers: { 'Content-Type': 'application/json' }
-        })
-        let data = await res.json()
+//     try {
+//         let res = await fetch(`${domain}/ohmy-add-points/user/${userId}`, {
+//             method: 'GET',
+//             mode: 'cors',
+//             headers: { 'Content-Type': 'application/json' }
+//         })
+//         let data = await res.json()
 
-        let modalFname = document.getElementById('pointsModalLabelOH')
-        let youhave = document.getElementById('youhaveOH')
-        let mainPoints = document.getElementById('mainPointsOH')
-        let dots5 = document.getElementById('loaderModalOH')
-        let spinner4 = document.getElementById('loaderBtnOH')
-        let modalDesc = document.getElementById('modalDescOH')
-        let ftbtn = document.getElementById('ftbtnOH')
+//         let modalFname = document.getElementById('pointsModalLabelOH')
+//         let youhave = document.getElementById('youhaveOH')
+//         let mainPoints = document.getElementById('mainPointsOH')
+//         let dots5 = document.getElementById('loaderModalOH')
+//         let spinner4 = document.getElementById('loaderBtnOH')
+//         let modalDesc = document.getElementById('modalDescOH')
+//         let ftbtn = document.getElementById('ftbtnOH')
 
-        modalFname.innerText = data.name.substring(0, 24)
-        youhave.innerText = data.points
-        mainPoints.innerText = data.points
-        dots5.style.display = 'none'
-        spinner4.style.display = 'none'
+//         modalFname.innerText = data.name.substring(0, 24)
+//         youhave.innerText = data.points
+//         mainPoints.innerText = data.points
+//         dots5.style.display = 'none'
+//         spinner4.style.display = 'none'
 
-        ftbtn.style.display = 'block'
-        modalDesc.style.display = 'flex'
-        document.getElementById('realOH').style.display = 'none'
-        document.getElementById('shadowOH').style.display = 'block'
+//         ftbtn.style.display = 'block'
+//         modalDesc.style.display = 'flex'
+//         document.getElementById('realOH').style.display = 'none'
+//         document.getElementById('shadowOH').style.display = 'block'
 
-    } catch (err) {
-        let errorWindow = window.open("")
-        errorWindow.document.write(err.message + "<br></h3><h3>Error! Failed to add points, Telegram the screenshot of this error to Oh MY! Admin</h3>")
-        console.log(err.message)
-    }
-})
+//     } catch (err) {
+//         let errorWindow = window.open("")
+//         errorWindow.document.write(err.message + "<br></h3><h3>Error! Failed to add points, Telegram the screenshot of this error to Oh MY! Admin</h3>")
+//         console.log(err.message)
+//     }
+// })
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

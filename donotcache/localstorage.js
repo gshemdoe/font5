@@ -82,20 +82,6 @@ async function send_ds_tg(msgid) {
 }
 
 async function send_oh_tg(nano) {
-    let domain = 'https://netdramastore.herokuapp.com'
-    //let domain = 'http://localhost:3000'
-    let id = localStorage.getItem('oh_id')
-    let res = await fetch(`${domain}/direct-oh-send/${id}/${nano}`)
-
-    if(res.status == 200) {
-        let cf = confirm('✔ File sent successfully to your inbox, return to Telegram to watch it')
-
-        if(cf == true || cf == false) {
-            window.location.reload()
-        }
-    }
-    else if (res.status == 404) {
-        let cf = confirm(`Ooops! I couldn't send this file to you, the possible reason is that, you blocked Booster Bot on Telegram or you never interacted with it. Close this message and click "OPEN IN TELEGRAM" button to continue`)
-    }
+    alert('Sorry for Inconvenience, this function is not available at time, try again later 😢.')
 }
 

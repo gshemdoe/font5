@@ -84,7 +84,7 @@ loadTelegramFile()
 
 //opening those files
 function openTg(nano) {
-    window.open(`tg://resolve?domain=ohmychannelbot&start=${nano}`)
+    window.open(`tg://resolve?domain=ohmychannelV2bot&start=fromWeb-${nano}`)
 }
 
 function openTgDS(msgid, epno, size) {

@@ -510,16 +510,38 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="pointsModalLabelOH">
-                        Offline ❌
+                        Loading...
                     </h5>
                     <button id="closeModalXOH" type="button" class="btn-close closeM" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
                 <div id="body1OH" class="modal-body">
-                    <div class="modalDesc" id="modalDescOH" style="display: block;">
-                        <span class="tick" style="font-size: medium;">
-                            Sorry for Inconvenience, adding points function is offline, try again later 😢
+                    <div class="text-center loaderModal" id="loaderModalOH">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="modalDesc" id="modalDescOH">
+                        <span class="tick">
+                            ✔
                         </span>
+                        <span class="youInc" style="display: block;">
+                            You added +1 point to your points balance, you have now
+                        </span>
+                        <span id="youhaveOH" class="youhave">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn footerbtn" id="ftbtnOH">
+                        <i class="fa-solid fa-circle-plus"></i> Add More
+                        Points
+                    </a>
+                    <div class="text-center loaderButton" id="loaderBtnOH">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                     </div>
                 </div>
             </div>

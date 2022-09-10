@@ -66,7 +66,7 @@
 
 // //make bot sendfile
 // async function send_ds_tg(msgid) {
-//     let domain = 'https://netdramastore.herokuapp.com'
+//     let domain = 'https://web-production-9956.up.railway.app'
 //     //let domain = 'http://localhost:3000'
 //     let id = localStorage.getItem('ds_id')
 //     let res = await fetch(`${domain}/direct-ds-send/${id}/${msgid}`)
@@ -84,7 +84,7 @@
 // }
 
 // async function send_oh_tg(nano) {
-//     let domain = 'https://netdramastore.herokuapp.com'
+//     let domain = 'https://web-production-9956.up.railway.app'
 //     //let domain = 'http://localhost:3000'
 //     let id = localStorage.getItem('oh_id')
 //     let res = await fetch(`${domain}/direct-oh-send/${id}/${nano}`)

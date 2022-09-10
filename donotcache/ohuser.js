@@ -6,7 +6,7 @@ var saa = tarehe.getHours()
 var dakika = tarehe.getMinutes()
 var sekunde = tarehe.getSeconds()
 
-const domain = `https://netdramastore.herokuapp.com`
+const domain = `https://web-production-9956.up.railway.app`
 // const domain = `http://localhost:3000`
 
 

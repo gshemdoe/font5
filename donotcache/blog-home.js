@@ -1,6 +1,6 @@
 // js for tos pages
 
-const getUrl = `https://netdramastore.herokuapp.com/recent-popular/all-posts`
+const getUrl = `https://web-production-9956.up.railway.app/recent-popular/all-posts`
 
 async function loadSidePost() {
     let mainBody = document.querySelector('.mainBody')

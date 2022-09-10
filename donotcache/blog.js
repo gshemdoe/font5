@@ -1,6 +1,6 @@
 async function loadPost() {
     const url = window.location.href
-    const getUrl = `https://netdramastore.herokuapp.com/blog`
+    const getUrl = `https://web-production-9956.up.railway.app/blog`
     // const getUrl = `http://localhost:3000/blog`
 
     if (url.includes('?id=')) {
@@ -124,7 +124,7 @@ async function loadDSPoints() {
         let closeModalXDS = document.getElementById('closeModalXDS')
 
 
-        const DSuserInfo = `https://netdramastore.herokuapp.com/dsuser/info/${thePostId}/${theUserId}`
+        const DSuserInfo = `https://web-production-9956.up.railway.app/dsuser/info/${thePostId}/${theUserId}`
 
         try {
             let res = await fetch(DSuserInfo)
@@ -185,7 +185,7 @@ loadDSPoints()
 document.getElementById('realDS').addEventListener('click', async () => {
 
     //let domain = 'http://localhost:3000'
-    let domain = 'https://netdramastore.herokuapp.com'
+    let domain = 'https://web-production-9956.up.railway.app'
     let hashUrl = window.location.hash
     let userId = hashUrl.split('userid=DS')[1]
 
@@ -258,7 +258,7 @@ async function loadOHPoints() {
         let closeModalXOH = document.getElementById('closeModalXOH')
 
 
-        const OHuserInfo = `https://netdramastore.herokuapp.com/ohuser/info/${thePostId}/${theUserId}`
+        const OHuserInfo = `https://web-production-9956.up.railway.app/ohuser/info/${thePostId}/${theUserId}`
 
         try {
             let res = await fetch(OHuserInfo)
@@ -315,7 +315,7 @@ loadOHPoints()
 document.getElementById('realOH').addEventListener('click', async () => {
 
     //let domain = 'http://localhost:3000'
-    let domain = 'https://netdramastore.herokuapp.com'
+    let domain = 'https://web-production-9956.up.railway.app'
     let hashUrl = window.location.hash
     let userId = hashUrl.split('userid=OH')[1]
 

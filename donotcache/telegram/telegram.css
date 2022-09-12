@@ -61,19 +61,27 @@
          font-size: 100px;
      }
 
-     .button {
+     .button,
+     .tweb {
          text-align: center;
          display: flex;
          flex-direction: column;
      }
 
+     .tweb {
+        margin-top: 24px !important;
+     }
+
      .button #real,
      .button #realDSTG,
-     .button #realOHTG {
+     .button #realOHTG,
+     .tweb {
          display: none;
      }
 
-     .button button {
+     .button button,
+     #ohtweb, 
+     #dstweb {
          font-weight: bolder;
          color: white;
          background-color: #33d684;
@@ -85,6 +93,7 @@
          width: 260px;
          font-size: 16px;
          margin: auto;
+         text-decoration: none;
      }
 
      .button .wait {
@@ -94,7 +103,11 @@
      }
 
      .button button:hover,
-     .button button:active {
+     .button button:active,
+     #dstweb:hover,
+     #dstweb:active,
+     #ohtweb:active,
+     #ohtweb:hover {
          background-color: dodgerblue;
          color: white;
          outline: none;

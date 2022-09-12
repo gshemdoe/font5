@@ -23,9 +23,11 @@ function loadTelegramFile() {
         let wait = document.getElementById('waitDSTG')
         let real = document.getElementById('realDSTG')
         let waitButton = document.getElementById('waitBDSTG')
-        let count = 10
+        let count = 15
 
+        let dsWeb = document.getElementById('dstweb')
         real.setAttribute('onclick', `openTgDS('${msgid}', '${epno}', '${size}')`)
+        dsWeb.setAttribute('href', `https://t.me/dramastorebot?start=fromWeb${msgid}`)
         document.getElementById('ep').innerText = `${epno} (${size} MB)`
 
 
@@ -37,6 +39,7 @@ function loadTelegramFile() {
                 clearInterval(interval)
                 waitButton.style.display = 'none'
                 real.style.display = 'block'
+                document.querySelector('.dstweb').style.display = 'flex'
             }
         }, 1500)
     }
@@ -61,8 +64,10 @@ function loadTelegramFile() {
         let wait = document.getElementById('waitOHTG')
         let real = document.getElementById('realOHTG')
         let waitButton = document.getElementById('waitBOHTG')
-        let count = 10
+        let count = 15
 
+        let ohWeb = document.getElementById('ohtweb')
+        ohWeb.setAttribute('href', `https://t.me/ohmychannelV2bot?start=fromWeb-${nano}`)
         real.setAttribute('onclick', `openTg('${nano}')`)
 
 
@@ -74,6 +79,7 @@ function loadTelegramFile() {
                 clearInterval(interval)
                 waitButton.style.display = 'none'
                 real.style.display = 'block'
+                document.querySelector('.ohtweb').style.display = 'flex'
             }
         }, 1500)
     }

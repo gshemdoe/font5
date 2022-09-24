@@ -8,8 +8,11 @@ function loadTelegramFile() {
 
         //calling subiri
         document.getElementById('addingPtsBlog').style.display = 'block'
+
+        //I changed to scroll to ads
         let scrollTo = document.getElementById('scrollTo')
-        scrollTo.setAttribute('onclick', `scrollingFileBtn('tgBodyDSTG')`)
+        //scrollTo.setAttribute('onclick', `scrollingFileBtn('tgBodyDSTG')`)
+        scrollTo.setAttribute('onclick', `scrollingFileBtn('toAd')`)
         subiriTimeForFiles(document.getElementById('tgBodyDSTG'))
 
         let haashUrl = window.location.hash
@@ -57,8 +60,11 @@ function loadTelegramFile() {
 
         //calling subiri
         document.getElementById('addingPtsBlog').style.display = 'block'
+
+        //I changed to scroll to ads
         let scrollTo = document.getElementById('scrollTo')
-        scrollTo.setAttribute('onclick', `scrollingFileBtn('tgBodyOHTG')`)
+        //scrollTo.setAttribute('onclick', `scrollingFileBtn('tgBodyOHTG')`)
+        scrollTo.setAttribute('onclick', `scrollingFileBtn('toAd')`)
         subiriTimeForFiles(document.getElementById('tgBodyOHTG'))
 
         let wait = document.getElementById('waitOHTG')

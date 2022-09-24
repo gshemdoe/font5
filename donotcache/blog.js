@@ -106,8 +106,10 @@ async function loadDSPoints() {
         document.getElementById('dynamicBtn').innerText = 'Go To Add Points'
         document.getElementById('dynamicTitle').innerText = 'Adding Points'
 
+        //I changed scroll behaviour to ads
         let scrollTo = document.getElementById('scrollTo')
-        scrollTo.setAttribute('onclick', `scrollingBtn('userboxDS')`)
+        //scrollTo.setAttribute('onclick', `scrollingBtn('userboxDS')`)
+        scrollTo.setAttribute('onclick', `scrollingBtn('toAd')`)
 
         let dramastoreTableAndUserBoxCont = document.querySelector('.dramastoreTableAndUserBoxCont')
         let userboxDS = document.getElementById('userboxDS')
@@ -242,8 +244,10 @@ async function loadOHPoints() {
         document.getElementById('dynamicBtn').innerText = 'Go To Add Points'
         document.getElementById('dynamicTitle').innerText = 'Adding Points'
 
+        //setting aatribut to scroll to the box, I changed that to ads
         let scrollTo = document.getElementById('scrollTo')
-        scrollTo.setAttribute('onclick', `scrollingBtn('userboxOH')`)
+        //scrollTo.setAttribute('onclick', `scrollingBtn('userboxOH')`)
+        scrollTo.setAttribute('onclick', `scrollingBtn('toAd')`)
 
         let userboxOH = document.getElementById('userboxOH')
         let shadowOH = document.getElementById('shadowOH')

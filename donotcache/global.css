@@ -9,10 +9,11 @@
     margin: 12px auto;
     padding-top: 12px;
     padding-bottom: 12px;
+    height: fit-content;
 }
 
 @media (max-width: 420px) {
-    .ads {
-        width: 95% !important;
+    .ads .res_ads {
+        width: 320px !important;
     }
 }
